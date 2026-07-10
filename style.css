@@ -6,38 +6,42 @@
 
 body {
     background-color: #f5f2f2;
-    color:#111827;   
+    color: #111827;
 }
+
 /* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:20px 5%;
-    border-bottom: 2px solid #e5e7eb;;
+    padding: 20px 5%;
+    border-bottom: 2px solid #e5e7eb;
+    ;
     position: sticky;
     top: 0;
     background: #f7f5f5;
-    z-index: 100;   /* From chatgpt */
+    z-index: 100;
+    /* From chatgpt */
 }
+
 .logo {
     display: flex;
-    align-items: left; 
+    align-items: left;
     font-size: 10px;
     gap: 5px;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .nav-links a {
     text-decoration: none;
-    color:  #626874;
+    color: #626874;
     margin: 0 20px;
     font-size: 15px;
     font-weight: 500;
 }
 
 .nav-links a:hover {
-    color:#101727;
+    color: #101727;
 }
 
 /* Buttons */
@@ -52,7 +56,7 @@ body {
     border: none;
     cursor: pointer;
     text-align: right;
-    
+
 }
 
 .btn-primary:hover {
@@ -70,9 +74,10 @@ body {
     color: #f7f3f3;
     padding: 20px 3px;
     text-align: center;
-    background-image: url('./assets/banner.jpg'); 
-    max-width: 1200px;
+    background-image: url('./assets/banner.jpg');
+    width: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .hero h1 {
@@ -87,4 +92,64 @@ body {
     color: #9ca3af;
     margin: -10px;
     line-height: 1.7;
+}
+
+/* speakers Section */
+.speakers-section {
+    padding: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.speakers-section h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 45px;
+    font-family: "Inter";
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.speaker-card {
+    border: 1px solid #e5e7eb;
+    ;
+    border-radius: 12px;
+    text-align: left;
+    background: #fff;
+
+}
+
+.deg {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    color: #2563eb;
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-style: normal;
+}
+
+.speaker-info h3 {
+    margin-left: 10px;
+    color: #0d1b2aFF;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    height: 28px;
+}
+
+.speaker-info p {
+    margin-left: 10px;
+    color: #575757FF;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    height: 21px;
 }
