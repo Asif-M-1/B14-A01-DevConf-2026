@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #f5f2f2;
+    background-color: #ffffffFF;
     color: #111827;
 }
 
@@ -15,8 +15,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
-    border-bottom: 2px solid #e5e7eb;
-    ;
+    border-bottom: 2px solid #e5e7eb;;
     position: sticky;
     top: 0;
     background: #f7f5f5;
@@ -85,6 +84,7 @@ body {
     font-weight: 800;
     margin-bottom: 1.5rem;
     letter-spacing: 1px;
+    font-family: "Inter";
 }
 
 .hero p {
@@ -92,6 +92,7 @@ body {
     color: #9ca3af;
     margin: -10px;
     line-height: 1.7;
+    font-family: "Inter";
 }
 
 /* speakers Section */
@@ -111,7 +112,7 @@ body {
 .speakers-grid {
     display: grid;
     /* grid-template-columns: 1fr 1fr; */
-    grid-template-columns: repeat(2, 1fr);
+     grid-template-columns: repeat(2, 1fr); 
     gap: 35px;
     max-width: 1200px;
     margin: auto;
@@ -152,4 +153,180 @@ body {
     font-weight: 400;
     font-style: normal;
     height: 21px;
+}
+
+/*Price Section*/
+
+.price-section {
+    background-color: #ffffffFF;
+    text-align: center;
+    /* display: block;
+  margin: auto; */
+}
+
+.price-section h2 {
+    margin-bottom: 15px;
+    margin-top: 50px;
+    font-family: "Inter";
+    font-size: 48px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.subsection {
+    color: #575757;
+    font-family: "Inter";
+    margin-bottom: 30px;
+    font-size: 16px;
+    
+}
+
+.price {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: auto;
+}
+
+.price-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 30px 40px;
+    text-align: left;
+}
+.price-card.featured {
+    background-color: #0D1B2A;
+    color: #ffffff;
+    border: none;
+    transform: scale(1.03);
+}
+
+.plan {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #6b7280;
+    font-weight: 700;
+}
+
+.plan-2 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #93C5FD;
+    font-weight: 700;
+}
+
+.price-1{
+color: #0d1b2aFF;
+font-family: Inter;
+font-style: normal;
+font-size: 44px;
+font-weight: 700;
+}
+
+.price-2{
+color: #ffffff;
+font-family: Inter;
+font-style: normal;
+font-size: 44px;
+font-weight: 700;
+}
+
+.person{
+    color: #888888FF;;
+    font-family: Inter;
+    font-weight: 400;
+     font-size: 15px;
+     border-bottom: solid 1px  #4b5563;
+     line-height: 50px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.features li {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.2rem;
+        font-family: "Inter";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4b5563;
+}
+.features-1 li {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.2rem;
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffffCC;
+}
+.features li::marker {
+    color: blue ;
+    font-size: 18px;
+}
+.features-1 li::marker {
+    color: rgb(87, 87, 226) ;
+    font-size: 18px;
+}
+
+
+
+.btn-price-1 {
+    background-color: white;
+    color: rgb(78, 78, 228);
+    border: 1px solid blue;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-price-2 {
+    background: #2563EB;
+    color: #FFFFFF;
+    border: 1px solid blue;
+   font-size: 14px;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
+.btn-price-3 {
+    background: #F8F9FB;
+    color: #0d1b2aFF;;
+    border: 1px solid #0d1b2aFF;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+@media (max-width: 900px) {
+
+ .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .speakers-grid {
+        grid-template-columns: 1fr;
+    }
+    .price {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
