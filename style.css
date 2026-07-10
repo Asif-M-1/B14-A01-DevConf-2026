@@ -110,15 +110,15 @@ body {
 
 .speakers-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(2, 1fr);
     gap: 35px;
     max-width: 1200px;
     margin: auto;
 }
 
 .speaker-card {
-    border: 1px solid #e5e7eb;
-    ;
+    border: 1px solid #e5e7eb;;
     border-radius: 12px;
     text-align: left;
     background: #fff;
